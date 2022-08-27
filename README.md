@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Process
+## Process/Packages
 composer create-project laravel/laravel projectName
 
 composer require spatie/laravel-permission
@@ -16,5 +16,21 @@ composer require laravelcollective/html
 
 composer require laravel/ui:*
 
+## Output
 
+
+![role1](https://user-images.githubusercontent.com/80118217/187037829-a063cdbf-3dc0-4b28-bc19-77d1da0b4dbf.JPG)
+
+
+
+
+
+![role2](https://user-images.githubusercontent.com/80118217/187037845-319cdac3-ed44-41f5-8cea-bb18f18eb56b.JPG)
+
+
+
+![role3](https://user-images.githubusercontent.com/80118217/187037847-04c41dde-d036-4129-bf33-97e9346353f2.JPG)
+
+
+![role4](https://user-images.githubusercontent.com/80118217/187037848-a1c7310f-9b5d-427e-8ff6-1aa75aa61437.JPG)
 
