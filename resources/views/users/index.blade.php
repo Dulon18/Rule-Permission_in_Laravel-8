@@ -6,11 +6,11 @@
     <div class="card"style="width: 50rem;" >
         <div class="card-body">
         <div class="col ">
-        <div class="">
+        <div class="text-center">
             <h2>Users Management</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-success" href="{{ route('users.create') }}"> Create New User</a>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-success" href="{{ route('users.create') }}"> Create User</a>
         </div>
     </div>
 </div>
@@ -37,11 +37,11 @@
     <td>{{ $user->name }}</td>
     <td>{{ $user->email }}</td>
     <td>
-      {{-- @if(!empty($user->getRoleNames()))
+      @if(!empty($user->getRoleNames()))
         @foreach($user->getRoleNames() as $v)
-           <label class="badge badge-success">{{ $v }}</label>
+           <label class="badge rounded-pill text-bg-success p-2">{{ $v }}</label>
         @endforeach
-      @endif --}}
+      @endif
     </td>
     <td>
        <a class="btn btn-info" href="{{ route('users.show',$user->id) }}">Show</a>
@@ -53,12 +53,8 @@
   </tr>
  @endforeach
 </table>
-
+</div>
+</div>
 
 {!! $data->render() !!}
-
-        </div>
-    </div>
-    
-
 @endsection
