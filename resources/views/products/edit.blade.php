@@ -1,14 +1,11 @@
 @extends('layouts.app')
-
-
 @section('content')
     <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+        <div class="card">
+            <div class="card-body">
+            <div class="col-lg-12 margin-tb">
+            <div class="text-center">
                 <h2>Edit Product</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -30,7 +27,6 @@
     	@csrf
         @method('PUT')
 
-
          <div class="row">
 		    <div class="col-xs-12 col-sm-12 col-md-12">
 		        <div class="form-group">
@@ -50,11 +46,12 @@
 		            <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $product->detail }}</textarea>
 		        </div>
 		    </div>
-		    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+		    <div class="mt-2">
 		      <button type="submit" class="btn btn-primary">Submit</button>
+              <a class="btn btn-info" href="{{ route('products.index') }}"> Back</a>
 		    </div>
 		</div>
-
-
     </form>
+ </div>
+</div>
 @endsection

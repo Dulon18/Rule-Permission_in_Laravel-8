@@ -3,12 +3,14 @@
 
 @section('content')
     <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+        <div class="card">
+            <div class="card-body">
+            <div class="col-lg-12 margin-tb">
+            <div class="text-center">
                 <h2>Add New Product</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn btn-danger" href="{{ route('products.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -24,7 +26,6 @@
             </ul>
         </div>
     @endif
-
 
     <form action="{{ route('products.store') }}" method="POST">
     	@csrf
@@ -48,14 +49,12 @@
 		            <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
 		        </div>
 		    </div>
-		    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+		    <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-2">
 		            <button type="submit" class="btn btn-primary">Submit</button>
 		    </div>
 		</div>
-
-
     </form>
 
-
-<p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
+            </div>
+        </div>
 @endsection

@@ -7,9 +7,7 @@
         <div class="pull-left">
             <h2> Show Role</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('roles.index') }}"> Back</a>
-        </div>
+        
     </div>
 </div>
 
@@ -29,6 +27,9 @@
                     <label class="label label-success">{{ $v->name }},</label>
                 @endforeach
             @endif
+        </div>
+        <div class="mt-3">
+            <a class="btn btn-danger" href="{{ route('roles.index') }}"> Back</a>
         </div>
     </div>
 </div>

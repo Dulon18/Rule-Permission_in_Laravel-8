@@ -2,12 +2,14 @@
 
 
 @section('content')
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Role Management</h2>
+<div class="row justify-content-center">
+    <div class="card" style="width:60%">
+        <div class="card-body">
+        <div class="col-lg-12 margin-tb">
+        <div class="text-center">
+            <h2 class="p-3">Role Management</h2>
         </div>
-        <div class="pull-right">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         @can('role-create')
             <a class="btn btn-success" href="{{ route('roles.create') }}"> Create New Role</a>
             @endcan
@@ -46,5 +48,9 @@
     </tr>
     @endforeach
 </table>
+
+        </div>
+    </div>
+
 {!! $roles->render() !!}
 @endsection

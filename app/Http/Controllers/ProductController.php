@@ -53,27 +53,17 @@ class ProductController extends Controller
      */
     public function show($id)
     {
+        $product=Product::find($id);
         return view('products.show',compact('product'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
+        $product=Product::find($id);
         return view('products.edit',compact('product'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+  
     public function update(Request $request, Product $product)
     {
         request()->validate([
@@ -89,11 +79,9 @@ class ProductController extends Controller
     }
 
  
-    public function destroy($product)
+    public function destroy($id)
     {
-        $product->delete();
-    
-        return redirect()->route('products.index')
-                        ->with('success','Product deleted successfully');
+        Product::find($id)->delete();
+        return redirect()->route('products.index')->with('success','Product deleted successfully');
     }
 }

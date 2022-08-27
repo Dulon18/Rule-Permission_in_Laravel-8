@@ -7,9 +7,6 @@
         <div class="pull-left">
             <h2>Edit New User</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
-        </div>
     </div>
 </div>
 
@@ -58,8 +55,9 @@
             {!! Form::select('roles[]', $roles,$userRole, array('class' => 'form-control','multiple')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+    <div class=" mt-3">
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-danger" href="{{ route('users.index') }}"> Back</a>
     </div>
 </div>
 {!! Form::close() !!}

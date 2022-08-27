@@ -2,8 +2,10 @@
 
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
+    <div class="row justify-content-center">
+        <div class="card" style="width: 60%;">
+            <div class="card-body">
+            <div class="col">
             <div class="text-center">
                 <h2>Products</h2>
             </div>
@@ -55,6 +57,10 @@
 	    </tr>
 	    @endforeach
     </table>
+
+            </div>
+        </div>
+      
 
 
     {!! $products->links() !!}
