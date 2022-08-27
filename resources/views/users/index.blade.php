@@ -2,9 +2,11 @@
 
 
 @section('content')
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
+<div class="row justify-content-center">
+    <div class="card"style="width: 50rem;" >
+        <div class="card-body">
+        <div class="col ">
+        <div class="">
             <h2>Users Management</h2>
         </div>
         <div class="pull-right">
@@ -54,5 +56,9 @@
 
 
 {!! $data->render() !!}
+
+        </div>
+    </div>
+    
 
 @endsection

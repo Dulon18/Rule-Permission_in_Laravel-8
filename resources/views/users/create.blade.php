@@ -2,12 +2,15 @@
 
 
 @section('content')
-<div class="row">
-    <div class="col-lg-12 margin-tb">
+<div class="row  justify-content-center">
+<div class="card"style="width: 50rem;" >
+        <div class="card-body">
+        <div class="col ">
+        <div class="col-lg-12 margin-tb">
         <div class="pull-left">
             <h2>Create New User</h2>
         </div>
-        <div class="pull-right">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
         </div>
     </div>
@@ -59,10 +62,13 @@
             {!! Form::select('roles[]', $roles,[], array('class' => 'form-control','multiple')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-2">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </div>
 {!! Form::close() !!}
+        </div>
+</div>
+   
 
 @endsection
