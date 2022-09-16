@@ -28,9 +28,9 @@ composer require laravel/ui:*
 ![role2](https://user-images.githubusercontent.com/80118217/187037845-319cdac3-ed44-41f5-8cea-bb18f18eb56b.JPG)
 
 
-
-![role3](https://user-images.githubusercontent.com/80118217/187037847-04c41dde-d036-4129-bf33-97e9346353f2.JPG)
-
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/80118217/187037847-04c41dde-d036-4129-bf33-97e9346353f2.JPG">
+</p>
 
 ![role4](https://user-images.githubusercontent.com/80118217/187037848-a1c7310f-9b5d-427e-8ff6-1aa75aa61437.JPG)
 
